@@ -1,0 +1,44 @@
+﻿<html lang="en">
+<head>
+	<title>LoggedIn as ... {{usr}}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="../static/form-staticimages/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/css/main.css">
+</head>
+<body>
+    <div class="contact1">
+        <a class="contact1-form-btn" href="/form">Log Out</a>
+        <div class="container-contact1">
+            <div>
+                <!-- Display result here - prediction and tip -->
+                <h5><strong style="color:red">Region Detected</strong> : {{web_out}}</h5>
+                <br>
+                <h5><strong style="color:brown">Calories (per serving)</strong> : {{cal_val}}</h5>
+                <br>
+                <h5><strong style="color:green">Tip</strong> : {{tip}}
+                {{message_str}}
+                </h5>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../static/form-static/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/popper.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/form-static/vendor/select2/select2.min.js"></script>
+    <script src="../static/form-static/vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <script src="../static/form-static/js/main.js"></script>
+</body>
+</html>

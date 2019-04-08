@@ -1,0 +1,54 @@
+﻿<html lang="en">
+<head>
+	<title>Predict Recipy Region</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/css/main.css">
+</head>
+<body>
+	<div class="contact1">
+        <a class="contact1-form-btn" href="/">Home</a>
+        <div class="container-contact1">
+            <div class="contact1-pic js-tilt" data-tilt>
+                <img src="../static/images/header2.jpg" alt="IMG">
+            </div>
+            <form class="contact1-form validate-form" action="/uploader" method="POST"
+                  enctype="multipart/form-data">
+                <div class="wrap-input1 validate-input" data-validate="Name is required">
+                    <input class="input1" type="text" name="username" placeholder="Name">
+                    <span class="shadow-input1"></span>
+                </div>
+                <div class="wrap-input1 validate-input" data-validate="Recipy is required">
+                    <input type="file" name="file" />
+                </div>
+                <div class="container-contact1-form-btn">
+                    <button class="contact1-form-btn" onsubmit="/uploader">
+                        <span>
+                            Predict!
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+	</div>
+    <script src="../static/form-static/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/popper.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/form-static/vendor/select2/select2.min.js"></script>
+    <script src="../static/form-static/vendor/tilt/tilt.jquery.min.js"></script>
+    <script >
+	    $('.js-tilt').tilt({
+		    scale: 1.1
+	    })
+    </script>
+    <script src="..static/form-static/js/main.js"></script>
+</body>
+</html>
